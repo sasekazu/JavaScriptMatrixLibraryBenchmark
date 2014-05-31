@@ -1,0 +1,13 @@
+*{
+	margin: 3px;
+	padding: 3px;
+}
+
+
+body{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS ProN", "Hiragino Kaku Gothic ProN", "ƒƒCƒŠƒI", Meiryo, sans-serif;
+}
+
+canvas {
+  border: solid black 1px;
+}
