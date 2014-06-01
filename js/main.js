@@ -5,9 +5,9 @@
 
 $(document).ready(function () {
 
-	var init = 5;
-	var max = 500;
+	var max = 700;
 	var bin = 20;
+	var init = bin;
 	var data = [];
 	for(var N = init; N <= max ; N += bin) {
 		var A = numeric.random([N, N]);
@@ -34,13 +34,15 @@ $(document).ready(function () {
 		axes: {
 			xaxis: {
 				label: 'N',
+				renderer: $.jqplot.DateAxisRenderer,
 				min: 0,
-				max: data[data.length - 1][0],
-				tickInterval: bin * 10
+				max: max+100,
+				tickInterval: 100
 			},
 			yaxis: {
 				label: 'Time [ms]',
-				min: 0
+				min: 0,
+				max: 800
 			}
 		},
 		seriesDefaults: {
